@@ -1,6 +1,7 @@
 import React, { lazy } from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import NavBar from './NavBar';
+
 // import Timer from './timer/timer';
 // import Profile from './profile/profile';
 // import Analytics from './analytics/analytics';
