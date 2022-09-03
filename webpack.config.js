@@ -2,10 +2,10 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.jsx",
+  entry: "./client/src/index.jsx",
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: "bundle.js"
+    path: path.join(__dirname, './client/dist'),
+    filename: "client/dist/bundle.js"
   },
   module: {
     rules: [
@@ -27,7 +27,7 @@ module.exports = {
   devServer: {
     // [static] config for how what to serve
     static: {
-      directory: path.join(__dirname, 'public'),
+      directory: './client/server/index.js',
     },
     compress: true,
     // [port] what port on our local machine to run the dev server
