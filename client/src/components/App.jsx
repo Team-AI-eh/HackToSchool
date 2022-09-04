@@ -8,9 +8,9 @@ import {
   onAuthStateChanged,
 } from 'firebase/auth';
 // import auth from '../../../server/database/firebase-config';
-import Timer from './timer/timer';
-import Profile from './profile/profile';
-import Analytics from './analytics/analytics';
+// import Timer from './timer/timer';
+// import Profile from './profile/profile';
+// import Analytics from './analytics/analytics';
 import Login from './login/login';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import NavBar from './NavBar';
@@ -128,9 +128,6 @@ export default function App() {
   // };
   return (
     <div>
-<<<<<<< HEAD
-      <Analytics />
-=======
       <NavBar />
       <React.Suspense fallback={<span>Loading...</span>}>
         <Routes>
@@ -141,7 +138,6 @@ export default function App() {
         </Routes>
       </React.Suspense>
       <Outlet />
->>>>>>> d012027e020446ef7f7b5c0ecf414349f5959611
     </div>
   );
 }
